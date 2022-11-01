@@ -1,0 +1,128 @@
+
+.formpagediv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text);
+    padding-bottom: 0;
+  
+}
+
+.formpagediv h1 {
+    margin-bottom: 0.5rem;
+    font-size: 1.7rem;
+}
+
+.formpagediv p {
+    font-size: 1.2rem;
+}
+
+.formandpreview {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin:1rem; 
+    padding-bottom: 0;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--text);
+    margin-top: 1rem;
+    border-color: var(--text);
+    border-radius: 0.3rem;
+    padding:0.5rem;
+    width: 15rem;
+    margin:1rem;
+}
+
+fieldset input {
+    margin-bottom: 0.15rem; 
+    margin-top: 0.1rem;
+    text-transform: capitalize;
+}
+
+/* .dietinput {
+    height: 3.5rem;
+    overflow:scroll;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+} */
+
+.submitbtn{
+    border: none;
+    border-radius: 0.3rem;
+    font-family: 'Lato', sans-serif;
+    padding: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: all 0.2s ease-in-out;
+    color: var(--background);
+    cursor: pointer;
+    margin: 0.1rem
+}  
+    
+ .submitbtn:hover {
+    transform: scale(1.05);
+    background-color: var(--primary)
+}
+
+
+.previewdiv {
+    height: 27rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+}
+
+.animaldivpreview{
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    height: 100%;
+   background-color: var(--background);
+   text-transform: capitalize;
+   height: 25rem;
+   border-radius: 0.5rem;
+}
+
+.animaldivpreview h1 {
+    margin:0;
+    padding: 0;
+    font-size: 1.6rem;
+    width: 20rem;
+    color: var(--text);
+   
+} 
+
+.animaldivpreview h2 {
+    font-family: 'Lato', sans-serif;
+    color: var(--text);
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.animaldivpreview img {
+    height: 15rem;
+    width: 17rem;
+    object-fit: contain;
+}
+
+.animaldivpreview p {
+    color:var(--text)
+}
+
+.animaldivpreview .description p {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 1rem;
+
+}

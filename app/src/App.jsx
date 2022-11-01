@@ -1,11 +1,20 @@
 import './App.css';
 
-function App() {
+import { Outlet } from 'react-router-dom';
+
+import { Footer } from './components/Footer';
+import { Header } from './components/header';
+import { Nav } from './components/Nav';
+
+export const App = () => {
   return (
     <div className="App">
-      <h1>all good</h1>
+      <Header />
+      <Nav />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
     </div>
   );
-}
-
-export default App;
+};

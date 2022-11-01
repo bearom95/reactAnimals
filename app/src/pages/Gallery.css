@@ -1,0 +1,104 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.animalsLayout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text);
+    
+}
+
+.introdiv {
+    background-color: var(--background);
+    border-radius: 0.3rem;
+    padding: 0.5rem
+    
+}
+
+h2 {
+  font-size: 1.7rem;
+  color: var(--primary);
+  font-family: 'Aclonica', sans-serif
+}
+
+.animalsLayout > p{
+    margin: 0.5rem
+}
+
+
+.allminicards {
+    margin: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.animalminicard {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    width: 22rem;
+    height: 21rem;
+    background-color:var(--text);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.5rem;
+    transition: all 0.2s ease-in-out;
+    text-transform: capitalize;
+  }
+
+/*   .animalminicard:hover {
+    background-color: 
+  }
+ */
+
+  
+  .animalminicard > img {
+    width: 14rem;
+    height: 14rem;
+    object-fit: contain;
+  }
+
+
+  .animalminicard  h1 {
+    color:var(--background);
+    font-size: 1.5rem;
+  }
+
+  .animalminicard  h1:hover {
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.01);
+    color: var(--primary);
+  }
+
+  .animalminicard button{
+    border: none;
+    border-radius: 0.3rem;
+    font-family: 'Lato', sans-serif;
+    padding: 0.3rem;
+    background-color: var(--background);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: all 0.2s ease-in-out;
+    color: var(--text);
+    cursor: pointer
+}  
+
+  .animalminicard button:hover {
+    transform: scale(1.05);
+    background-color: var(--primary)
+  }
+
+
+  
