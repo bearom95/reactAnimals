@@ -62,6 +62,9 @@ footer img {
   object-fit: contain;
 }
 
+footer img:hover {
+  transform: scale(1.07);
+}
 
 
 

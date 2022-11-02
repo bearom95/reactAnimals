@@ -2,34 +2,10 @@ import './Form.css';
 
 import axios from 'axios';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 
 import { Image } from '../components/Image';
-
-const createAnimal = (ev, name, image, latin_name, type, activity, habitat, diet) => {
-  ev.preventDefault();
-
-  const animal = {
-    name: name,
-    image_link: image,
-    latin_name: latin_name,
-    animal_type: type,
-    active_time: activity,
-    habitat: habitat,
-    diet: diet,
-    id: uuidv4(),
-  };
-  console.log(animal);
-  postAnimal(animal);
-};
-
-const postAnimal = async (item) => {
-  axios({
-    method: 'post',
-    url: 'http://localhost:8080/animals',
-    data: item,
-  });
-};
 
 export const Form = () => {
   const [name, setName] = useState('');
@@ -39,6 +15,34 @@ export const Form = () => {
   const [activity, setActivity] = useState('');
   const [habitat, setHabitat] = useState('');
   const [diet, setDiet] = useState('');
+
+  const navigate = useNavigate();
+
+  const createAnimal = (ev, name, image, latin_name, type, activity, habitat, diet) => {
+    ev.preventDefault();
+
+    const animal = {
+      name: name,
+      image_link: image,
+      latin_name: latin_name,
+      animal_type: type,
+      active_time: activity,
+      habitat: habitat,
+      diet: diet,
+      id: uuidv4(),
+    };
+
+    postAnimal(animal);
+    navigate('/gallery');
+  };
+
+  const postAnimal = async (item) => {
+    axios({
+      method: 'post',
+      url: 'http://localhost:8080/animals',
+      data: item,
+    });
+  };
 
   return (
     <div className="formpagediv">

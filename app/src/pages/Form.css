@@ -88,6 +88,7 @@ fieldset input {
    background-color: var(--background);
    text-transform: capitalize;
    height: 25rem;
+   width: 20rem;
    border-radius: 0.5rem;
 }
 
@@ -124,5 +125,8 @@ fieldset input {
     flex-wrap: wrap;
     flex-direction: column;
     font-size: 1rem;
-
+    width: 18.5rem;
+    overflow:hidden
 }
+
+
